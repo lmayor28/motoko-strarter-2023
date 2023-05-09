@@ -1,9 +1,10 @@
 actor class Calculator() {
   // Step 1 -  Define a mutable variable called `counter`.
-
+  var counter : Float = 0;
   // Step 2 - Implement add
   public func add(x : Float) : async Float {
-    return 0.0;
+    counter += x;
+    return counter;
   };
 
   // Step 3 - Implement sub
